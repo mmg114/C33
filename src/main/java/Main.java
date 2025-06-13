@@ -21,5 +21,6 @@ public  class Main {
         BigDecimal salida = new BigDecimal(edad);
         String mensaje = "Hola mundo";
         String hola=mensaje;
+
     }
 }

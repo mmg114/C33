@@ -4,7 +4,6 @@ package clase1;
 
      Estudiantes(){}
 
-
      Estudiantes(String nombre,String apellido){
          this.nombre = nombre;
          this.apellido = apellido;
@@ -16,6 +15,7 @@ package clase1;
          this.edad = edad;
          this.identificacion = identificacion;
      }
+
      private String apellido,nombre;
      private Integer edad;
      private String identificacion;
@@ -47,6 +47,7 @@ package clase1;
      public String getNombre() {
         return nombre;
      }
+
      public void setNombre(String nombre) {
         this.nombre = nombre;
      }

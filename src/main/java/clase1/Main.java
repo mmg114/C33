@@ -4,14 +4,17 @@ package clase1;
 
      public static void main(String[] args) {
 
-         Estudiantes estudiante = new Estudiantes();
+            Estudiantes jose = new Estudiantes();
+            System.out.println(jose.toString());
+            jose.setNombre("Jose");
+/*            jose.apellido = "Arango";
 
-         estudiante.apellido = "Montalvo";
-         estudiante.matricular();
-         int proximoSemestre= estudiante.calcularSemestre(6);
-         System.out.println(proximoSemestre);
-         var fullName = estudiante.nombreCompleto("Mauricio","Guzman");
-         System.out.println(fullName);
+            jose.edad = 18;
+            jose.identificacion = "12345";*/
+            System.out.println(jose.toString());
 
+         System.out.println("---------------------------------------------------");
+            Estudiantes mauricio = new Estudiantes("Munoz","Mauricio",32,"1144");
+            System.out.println(mauricio.toString());
      }
  }

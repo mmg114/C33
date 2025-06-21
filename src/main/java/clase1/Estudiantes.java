@@ -21,7 +21,7 @@ package clase1;
      private String identificacion;
 
     //Matricula
-    public void matricular(){
+    public static void matricular(){
         System.out.println("Estudiante matriculandose");
 
     }

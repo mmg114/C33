@@ -1,13 +1,18 @@
 package Clase4;
 
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.Scanner;
+
 
 public class Main {
 
 
     public static void main(String[] args) {
 
-      /*  Scanner scaner = new Scanner(System.in);
+        Scanner scaner = new Scanner(System.in);
 
         System.out.println("Digita el numero de dia de la semana");
         int dia=scaner.nextInt();
@@ -36,7 +41,7 @@ public class Main {
                 break;
             default:
                 System.out.println("Error");
-        }*/
+        }
         System.out.println("________________________________________");
 
 
@@ -52,12 +57,22 @@ public class Main {
             j++;
         } while (j < 5);
 
+        //Date y localDate
+// Java 8
+        Date fecha = new Date();
+        System.out.println("Fecha: " + fecha);
+//java 11
+        LocalDate localDate = LocalDate.now();
+        System.out.println("Fecha: " + localDate);
 
-
+        LocalDateTime localDateTime = LocalDateTime.now();
+        System.out.println("Fecha con hora: " + localDateTime);
     }
-    public boolean validarClave(String usuario, String contrasena){
-        String clave= "123456";
+
+    public static boolean validarClave(String usuario, String contrasena){
         String user= "Mauricio@gmail.com";
+        String clave= "123456";
+
         boolean valido = false;
 
         if(user.equals(usuario) && clave.equals(contrasena)){
